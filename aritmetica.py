@@ -41,8 +41,11 @@ def suma(a, b):
 
 # Porcentaje:
 
-# Factorial:
-
+# Factorial: Luis Maturano
+def factorial(n):
+    if n < 0:
+        return "No existe el factorial de un número negativo."
+    return math.factorial(n)
 # Maximo y Minimo:
 
 
@@ -131,8 +134,9 @@ def main():
 
         elif opcion == "10":
             print("\n--- OPERACIÓN: FACTORIAL ---")
-            # TODO (Integrante 10): Pedir número entero y llamar a factorial(n)
-            print("Función en desarrollo por el Integrante 10.")
+            num = int(input("Ingrese un número entero no negativo: "))
+            resultado = factorial(num)
+            print(f"Resultado: {num}! = {resultado}")
 
         elif opcion == "11":
             print("\n--- OPERACIÓN: MÁXIMO Y MÍNIMO ---")
