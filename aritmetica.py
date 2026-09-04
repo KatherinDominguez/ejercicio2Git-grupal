@@ -32,6 +32,8 @@ def suma(a, b):
 # Division:
 
 # Potencia:
+def potencia(base, exponente):
+    return base ** exponente
 
 # Raiz Cuadrada:
 
@@ -106,9 +108,11 @@ def main():
 
         elif opcion == "5":
             print("\n--- OPERACIÓN: POTENCIA ---")
-            # TODO (Integrante 5): Pedir base y exponente y llamar a potencia(base, exponente)
-            print("Función en desarrollo por el Integrante 5.")
-
+            base = float(input("Ingrese el primer número base: "))
+            exponente = float(input("Ingrese el segundo número exponente:"))
+            resultado = potencia(base, exponente)
+            print(f"Resultado: {base} ^ {exponente} = {resultado}")
+          
         elif opcion == "6":
             print("\n--- OPERACIÓN: RAÍZ CUADRADA ---")
             # TODO (Integrante 6): Pedir número y llamar a raiz_cuadrada(numero)
