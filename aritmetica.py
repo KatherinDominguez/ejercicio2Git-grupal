@@ -29,7 +29,9 @@ def suma(a, b):
 def resta(a, b):
     return a - b
 
-# Multiplicacion:
+# Multiplicacion: Vanessa Flores
+def multiplicacion(a, b):
+    return a * b
 
 # Division: Nayra Oviedo
 def division(a, b):
@@ -113,7 +115,10 @@ def main():
         elif opcion == "3":
             print("\n--- OPERACIÓN: MULTIPLICACIÓN ---")
             # TODO (Integrante 3): Pedir datos y llamar a multiplicacion(num1, num2)
-            print("Función en desarrollo por el Integrante 3.")
+            num1 = float(input("Ingrese el primer numero: "))
+            num2 = float(input("Ingrese el segundo numero: "))
+            resultado = multiplicacion(num1, num2)
+            print(f"Resultado: {num1} * {num2} = {resultado}")
 
         elif opcion == "4":
             print("\n--- OPERACIÓN: DIVISIÓN ---")
