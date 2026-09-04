@@ -48,6 +48,8 @@ def potencia(base, exponente):
 # Promedio:
 
 # Porcentaje:
+def porcentaje(total, porcentaje_val):
+    return (total * porcentaje_val) / 100
 
 # Factorial: Luis Maturano
 def factorial(n):
@@ -146,8 +148,10 @@ def main():
 
         elif opcion == "9":
             print("\n--- OPERACIÓN: PORCENTAJE ---")
-            # TODO (Integrante 9): Pedir total y porcentaje, llamar a porcentaje(total, porcentaje_val)
-            print("Función en desarrollo por el Integrante 9.")
+            total = float(input("Ingrese el total (número base): "))
+            porcentaje_val = float(input("Ingrese el porcentaje a calcular: "))
+            resultado = porcentaje(total, porcentaje_val)
+            print(f"Resultado: El {porcentaje_val}% de {total} es {resultado}")
 
         elif opcion == "10":
             print("\n--- OPERACIÓN: FACTORIAL ---")
