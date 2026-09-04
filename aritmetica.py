@@ -45,8 +45,9 @@ def potencia(base, exponente):
 
 # Modulo (Resto de la division):
 
-# Promedio:
-
+# Promedio: Dajhana
+def promedio(valores):
+    return sum(valores) / len(valores)
 # Porcentaje:
 
 # Factorial: Luis Maturano
@@ -141,8 +142,9 @@ def main():
 
         elif opcion == "8":
             print("\n--- OPERACIÓN: PROMEDIO ---")
-            # TODO (Integrante 8): Pedir números separados por espacio y llamar a promedio(lista)
-            print("Función en desarrollo por el Integrante 8.")
+            valores = list(map(float, input("Ingrese los valores separados por espacios: ").split()))
+            resultado = promedio(valores)
+            print("El promedio es:", resultado)
 
         elif opcion == "9":
             print("\n--- OPERACIÓN: PORCENTAJE ---")
