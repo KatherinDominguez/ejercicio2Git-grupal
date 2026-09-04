@@ -57,7 +57,18 @@ def factorial(n):
     if n < 0:
         return "No existe el factorial de un número negativo."
     return math.factorial(n)
-# Maximo y Minimo:
+# Maximo y Minimo: Ximena Condo 
+def maximo_minimo(valores):
+    if not valores:  
+        return None, None
+    
+    maximo = minimo = valores[0]
+    for num in valores[1:]:
+        if num > maximo:
+            maximo = num
+        if num < minimo:
+            minimo = num
+    return maximo, minimo
 
 
 # ==============================================================================
