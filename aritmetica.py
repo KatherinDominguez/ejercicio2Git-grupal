@@ -42,6 +42,10 @@ def potencia(base, exponente):
     return base ** exponente
 
 # Raiz Cuadrada:
+def raiz_cuadrada(numero):
+    if numero < 0:
+        return None
+    return math.sqrt(numero)
 
 # Modulo (Resto de la division):
 
@@ -132,10 +136,15 @@ def main():
             resultado = potencia(base, exponente)
             print(f"Resultado: {base} ^ {exponente} = {resultado}")
           
-        elif opcion == "6":
+        elif  opcion == "6":
             print("\n--- OPERACIÓN: RAÍZ CUADRADA ---")
-            # TODO (Integrante 6): Pedir número y llamar a raiz_cuadrada(numero)
-            print("Función en desarrollo por el Integrante 6.")
+            numero = float(input("Ingrese un número: "))
+            resultado = raiz_cuadrada(numero)
+ 
+            if resultado is None:
+             print("Error: no se puede calcular la raíz cuadrada de un número negativo.")
+            else:
+             print(f"Resultado: √{numero} = {resultado}")
 
         elif opcion == "7":
             print("\n--- OPERACIÓN: MÓDULO ---")
