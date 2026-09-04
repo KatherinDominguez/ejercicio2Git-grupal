@@ -25,7 +25,9 @@ import math
 def suma(a, b):
     return a + b
 
-# Resta: 
+# Resta: Beckerman Aguero
+def resta(a, b):
+    return a - b
 
 # Multiplicacion:
 
@@ -91,8 +93,10 @@ def main():
 
         elif opcion == "2":
             print("\n--- OPERACIÓN: RESTA ---")
-            # TODO (Integrante 2): Pedir datos y llamar a resta(num1, num2)
-            print("Función en desarrollo por el Integrante 2.")
+            num1 = float(input("Ingrese el primer numero: "))
+            num2 = float(input("Ingrese el segundo numero: "))
+            resultado = resta(num1, num2)
+            print(f"Resultado: {num1} - {num2} = {resultado}")
 
         elif opcion == "3":
             print("\n--- OPERACIÓN: MULTIPLICACIÓN ---")
