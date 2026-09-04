@@ -31,7 +31,11 @@ def resta(a, b):
 
 # Multiplicacion:
 
-# Division:
+# Division: Nayra Oviedo
+def division(a, b):
+    if b == 0:
+        return None  
+    return a / b
 
 # Potencia:
 
@@ -105,8 +109,13 @@ def main():
 
         elif opcion == "4":
             print("\n--- OPERACIÓN: DIVISIÓN ---")
-            # TODO (Integrante 4): Pedir datos y llamar a division(num1, num2)
-            print("Función en desarrollo por el Integrante 4.")
+            num1 = float(input("Ingrese el numerador: "))
+            num2 = float(input("Ingrese el denominador: "))
+            resultado = division(num1, num2)
+            if resultado is None:
+                print("Error: no se puede dividir entre cero.")
+            else:
+                print(f"Resultado: {num1} / {num2} = {resultado}")
 
         elif opcion == "5":
             print("\n--- OPERACIÓN: POTENCIA ---")
