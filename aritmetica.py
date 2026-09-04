@@ -37,7 +37,7 @@ def division(a, b):
         return None  
     return a / b
 
-# Potencia:
+# Potencia: Guimela Cabezas
 def potencia(base, exponente):
     return base ** exponente
 
