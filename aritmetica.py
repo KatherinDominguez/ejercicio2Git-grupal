@@ -197,8 +197,13 @@ def main():
 
         elif opcion == "11":
             print("\n--- OPERACIÓN: MÁXIMO Y MÍNIMO ---")
-            # TODO (Integrante 11): Pedir números separados por espacio y llamar a maximo_minimo(lista)
-            print("Función en desarrollo por el Integrante 11.")
+            entrada = input("Ingrese los números separados por espacios: ").strip()
+            if not entrada:
+                print("Error: No ingresaste ningún número.")
+            else:
+                valores = [float(x) for x in entrada.split()]
+                max_val, min_val = maximo_minimo(valores)
+                print(f"Máximo: {max_val} | Mínimo: {min_val}")
 
         else:
             print("\nOpcion no valida. Por favor, selecciona un numero entre 0 y 11.")
