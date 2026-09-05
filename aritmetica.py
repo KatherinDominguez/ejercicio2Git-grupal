@@ -49,8 +49,11 @@ def raiz_cuadrada(numero):
         return None
     return math.sqrt(numero)
 
-# Modulo (Resto de la division):
-
+# Modulo (Resto de la division): Mirko
+def modulo(a, b):
+    if b == 0:
+        return None
+    return a % b
 # Promedio: Dajhana
 def promedio(valores):
     return sum(valores) / len(valores)
@@ -164,9 +167,15 @@ def main():
 
         elif opcion == "7":
             print("\n--- OPERACIÓN: MÓDULO ---")
-            # TODO (Integrante 7): Pedir datos y llamar a modulo(a, b)
-            print("Función en desarrollo por el Integrante 7.")
+            num1 = float(input("Ingrese el primer número: "))
+            num2 = float(input("Ingrese el segundo número: "))
 
+            resultado = modulo(num1, num2)
+
+            if resultado is None:
+                print("Error: no se puede calcular el módulo entre cero.")
+            else:
+                print(f"Resultado: {num1} % {num2} = {resultado}")
         elif opcion == "8":
             print("\n--- OPERACIÓN: PROMEDIO ---")
             valores = list(map(float, input("Ingrese los valores separados por espacios: ").split()))
